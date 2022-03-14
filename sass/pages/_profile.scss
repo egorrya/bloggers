@@ -20,20 +20,38 @@
   }
 
   &__top {
+    &__avatar {
+      width: 33.33%;
+
+      img {
+        display: block;
+        text-align: center;
+
+        border-radius: 50%;
+        border: 3px solid $color-white;
+        max-width: 11rem;
+        max-height: 11rem;
+        margin-top: -5.5rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
     &__short {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      padding: 0 4.5rem;
+      padding: 0 3rem;
 
       &--left,
       &--right {
-        margin-top: 2.6rem;
+        width: 33.33%;
+        margin-top: 2rem;
         text-align: center;
 
         & p:nth-child(1) {
-          font-size: 2.6rem;
-          line-height: 3.2rem;
+          font-size: 2rem;
+          line-height: 2.2rem;
           font-weight: bold;
         }
 
@@ -42,15 +60,40 @@
         }
       }
     }
+
+    &__info {
+      display: inline-block;
+      width: 100%;
+      padding: 1.6rem 2rem;
+
+      h2,
+      p {
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 2.4rem;
+      }
+
+      p {
+        font-size: 1.4rem;
+        color: $color-grey;
+      }
+    }
   }
 
-  &__avatar {
-    img {
-      border-radius: 50%;
-      border: 3px solid $color-white;
-      width: 14rem;
-      height: 14rem;
-      margin-top: -7rem;
+  &__cards {
+    padding: 2rem 2rem 0;
+
+    &__button {
+      margin-top: 2rem;
     }
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 1.4rem;
+
+    margin-bottom: 1rem;
   }
 }
