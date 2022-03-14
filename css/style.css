@@ -147,7 +147,6 @@ body {
     background-repeat: no-repeat;
     width: 100%;
     height: auto;
-    min-height: 30rem;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px; }
   .card__title {
@@ -200,6 +199,20 @@ body {
   .row .col-3-of-4 {
     width: calc(3 * (100% - 3 * 6rem) / 4 + 6rem * 2); }
 
+.navigation {
+  width: 100%;
+  padding: 1.5rem 0;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #fff;
+  box-shadow: 0px 0.5rem 2rem rgba(0, 0, 0, 0.3); }
+  .navigation img {
+    max-width: 3.6rem;
+    max-height: 3.6rem; }
+
 .register {
   background: url("https://images.unsplash.com/photo-1590739293931-8849049774f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
   background-size: cover;
@@ -247,7 +260,6 @@ body {
   margin-top: -40px;
   border-radius: 20px 20px 0 0;
   width: 100%;
-  height: 70vh;
   background: #fefefe; }
 
 .profile__top__avatar {
