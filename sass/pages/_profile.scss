@@ -1,0 +1,35 @@
+.profile {
+  &__background {
+    background: url("https://images.unsplash.com/flagged/photo-1594319622311-0b930abb17cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+    background-size: cover;
+    width: 100%;
+    height: 20rem;
+    z-index: 1;
+  }
+
+  &__main {
+    z-index: 0;
+    margin-top: -40px;
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+
+    // убери потом
+    height: 70vh;
+
+    background: #fefefe;
+  }
+
+  &__top {
+    &__short {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+      &--left {
+      }
+
+      &--rigth {
+      }
+    }
+  }
+}
