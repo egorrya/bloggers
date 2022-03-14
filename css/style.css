@@ -57,7 +57,7 @@ body {
   font-size: 1.5rem;
   padding: 1.5rem 2rem;
   border-radius: 4px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(254, 254, 254, 0.9);
   color: inherit;
   border: none;
   border-bottom: 3px solid transparent;
@@ -217,7 +217,7 @@ body {
 .profile__main {
   z-index: 0;
   margin-top: -40px;
-  border-radius: 15px 15px 0 0;
+  border-radius: 20px 20px 0 0;
   width: 100%;
   height: 70vh;
   background: #fefefe; }
@@ -225,4 +225,21 @@ body {
 .profile__top__short {
   display: flex;
   flex-direction: row;
-  justify-content: space-around; }
+  justify-content: space-around;
+  padding: 0 4.5rem; }
+  .profile__top__short--left, .profile__top__short--right {
+    margin-top: 2.6rem;
+    text-align: center; }
+    .profile__top__short--left p:nth-child(1), .profile__top__short--right p:nth-child(1) {
+      font-size: 2.6rem;
+      line-height: 3.2rem;
+      font-weight: bold; }
+    .profile__top__short--left p:nth-child(2), .profile__top__short--right p:nth-child(2) {
+      font-size: 1.4rem; }
+
+.profile__avatar img {
+  border-radius: 50%;
+  border: 3px solid #fefefe;
+  width: 14rem;
+  height: 14rem;
+  margin-top: -7rem; }
