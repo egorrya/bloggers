@@ -3,7 +3,7 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
@@ -20,6 +20,25 @@ html {
   @include respond(big-desk) {
     font-size: 75%;
   }
+
+  position: relative;
+
+  &::after {
+    @include respond(tab-port) {
+      font-family: "Montserrat", sans-serif;
+      position: absolute;
+      color: #222;
+
+      font-size: 2rem;
+      text-align: center;
+
+      top: 50vh;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      content: "Для просмотра прототипа откройте мобильное устройство";
+    }
+  }
 }
 
 body {
@@ -27,6 +46,6 @@ body {
   padding: 0rem;
 
   @include respond(tab-port) {
-    padding: 0;
+    display: none;
   }
 }

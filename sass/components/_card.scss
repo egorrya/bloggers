@@ -3,7 +3,8 @@
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
   background-color: #fff;
   width: 100%;
-  height: 30rem;
+  height: 26rem;
+
   position: relative;
   border-radius: 15px;
   overflow: hidden;
@@ -15,6 +16,7 @@
     background-repeat: no-repeat;
     width: 100%;
     height: auto;
+    min-height: 26rem;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
   }

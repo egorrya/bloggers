@@ -5,32 +5,44 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: border-box; }
 
 html {
-  font-size: 62.5%; }
-  @media only screen and (max-width: 75em) {
+  font-size: 62.5%;
+  position: relative; }
+  @media only screen and (min-width: 56.25em) {
     html {
       font-size: 56.25%; } }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (min-width: 37.5em) {
     html {
       font-size: 50%; } }
   @media only screen and (min-width: 112.5em) {
     html {
       font-size: 75%; } }
+  @media only screen and (min-width: 37.5em) {
+    html::after {
+      font-family: "Montserrat", sans-serif;
+      position: absolute;
+      color: #222;
+      font-size: 2rem;
+      text-align: center;
+      top: 50vh;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      content: "Для просмотра прототипа откройте мобильное устройство"; } }
 
 body {
   box-sizing: border-box;
   padding: 0rem; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (min-width: 37.5em) {
     body {
-      padding: 0; } }
+      display: none; } }
 
 body {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  line-height: 1.6; }
+  line-height: 1.3; }
 
 .btn {
   font-family: "Montserrat", sans-serif;
@@ -39,7 +51,7 @@ body {
 
 .btn {
   display: inline-block;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   text-decoration: none;
   width: 100%;
   padding-top: 1.6rem;
@@ -93,7 +105,7 @@ body {
 .form__radio-group {
   width: 49%;
   display: inline-block; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (min-width: 37.5em) {
     .form__radio-group {
       width: 100%;
       margin-bottom: 1rem; } }
@@ -138,7 +150,7 @@ body {
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
   background-color: #fff;
   width: 100%;
-  height: 30rem;
+  height: 26rem;
   position: relative;
   border-radius: 15px;
   overflow: hidden;
@@ -149,6 +161,7 @@ body {
     background-repeat: no-repeat;
     width: 100%;
     height: auto;
+    min-height: 26rem;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px; }
   .card__info {
@@ -174,13 +187,13 @@ body {
     content: "";
     display: table;
     clear: both; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (min-width: 37.5em) {
     .row {
       max-width: 50rem;
       padding: 0 2.5rem; } }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (min-width: 37.5em) {
       .row:not(:last-child) {
         margin-bottom: 5rem; } }
   .row [class^="col-"] {
@@ -188,11 +201,11 @@ body {
     padding: 20px 0; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
-      @media only screen and (max-width: 56.25em) {
+      @media only screen and (min-width: 37.5em) {
         .row [class^="col-"]:not(:last-child) {
           margin-right: 0;
           margin-bottom: 5rem; } }
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (min-width: 37.5em) {
       .row [class^="col-"] {
         width: 100% !important; } }
   .row .col-1-of-2 {
@@ -219,9 +232,9 @@ body {
   background-color: #fff;
   box-shadow: 0px 0.5rem 2rem rgba(0, 0, 0, 0.3); }
   .navigation img {
-    opacity: 0.8;
-    max-width: 3.4rem;
-    max-height: 3.4rem; }
+    opacity: 0.9;
+    max-width: 2.5rem;
+    max-height: 2.5rem; }
 
 .register {
   background: url("https://images.unsplash.com/photo-1590739293931-8849049774f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
@@ -239,7 +252,7 @@ body {
     width: 100%;
     padding: 4rem 2rem; }
     .register__buttons h1 {
-      font-size: 2.4rem;
+      font-size: 2.2rem;
       width: 100%;
       text-align: center;
       margin-bottom: 3rem; }
@@ -273,7 +286,7 @@ body {
   background: #fefefe; }
 
 .profile__top__avatar {
-  width: 33.33%; }
+  width: 40%; }
   .profile__top__avatar img {
     display: block;
     text-align: center;
@@ -289,13 +302,13 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 0 3rem; }
+  padding: 0 1.5rem; }
   .profile__top__short--left, .profile__top__short--right {
-    width: 33.33%;
+    width: 30%;
     margin-top: 2rem;
     text-align: center; }
     .profile__top__short--left p:nth-child(1), .profile__top__short--right p:nth-child(1) {
-      font-size: 2rem;
+      font-size: 1.8rem;
       line-height: 2.2rem;
       font-weight: bold; }
     .profile__top__short--left p:nth-child(2), .profile__top__short--right p:nth-child(2) {
@@ -304,14 +317,14 @@ body {
 .profile__top__info {
   display: inline-block;
   width: 100%;
-  padding: 1.6rem 2rem; }
+  padding: 1.8rem 2rem; }
   .profile__top__info h2,
   .profile__top__info p {
     text-align: center; }
   .profile__top__info h2 {
-    font-size: 2.4rem; }
+    font-size: 2.2rem; }
   .profile__top__info p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: #797979; }
 
 .profile__cards {
@@ -329,7 +342,7 @@ body {
   .catalog__title {
     margin-top: 6rem;
     margin-bottom: 2rem;
-    font-size: 2.6rem;
+    font-size: 2.2rem;
     text-align: center;
     font-weight: 700; }
   .catalog__filter {
@@ -382,6 +395,8 @@ body {
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0px 0.5rem 2rem rgba(0, 0, 0, 0.15); }
+    .catalog__card:last-child {
+      margin-bottom: 10rem; }
     .catalog__card__img {
       background-size: cover;
       background-position: center;
@@ -412,6 +427,7 @@ body {
         height: 7rem;
         box-shadow: 0px 0.25rem 0.5rem rgba(0, 0, 0, 0.2); }
     .catalog__card__title {
+      font-size: 1rem;
       width: 40%; }
     .catalog__card__theme {
       font-size: 0.9rem;
@@ -430,3 +446,16 @@ body {
     background-color: #eed3e4; }
   .catalog [data-theme="food"] {
     background-color: #eeecd3; }
+
+@media only screen and (max-width: 370px) {
+  .catalog__card__info {
+    padding: 1rem 1.5rem; }
+  .catalog__card__avatar {
+    width: 4rem; }
+    .catalog__card__avatar img {
+      top: -3.5rem;
+      left: -0.75rem;
+      width: 5rem;
+      height: 5rem; }
+  .catalog__card__title {
+    width: 30%; } }

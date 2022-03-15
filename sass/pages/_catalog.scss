@@ -4,7 +4,7 @@
   &__title {
     margin-top: 6rem;
     margin-bottom: 2rem;
-    font-size: 2.6rem;
+    font-size: 2.2rem;
     text-align: center;
     font-weight: 700;
   }
@@ -92,6 +92,10 @@
     overflow: hidden;
     box-shadow: 0px 0.5rem 2rem rgba(0, 0, 0, 0.15);
 
+    &:last-child {
+      margin-bottom: 10rem;
+    }
+
     &__img {
       background-size: cover;
       background-position: center;
@@ -134,6 +138,7 @@
     }
 
     &__title {
+      font-size: 1rem;
       width: 40%;
     }
 
@@ -166,5 +171,30 @@
 
   [data-theme="food"] {
     background-color: rgb(238, 236, 211);
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .catalog {
+    &__card {
+      &__info {
+        padding: 1rem 1.5rem;
+      }
+
+      &__avatar {
+        width: 4rem;
+        img {
+          top: -3.5rem;
+          left: -0.75rem;
+
+          width: 5rem;
+          height: 5rem;
+        }
+      }
+
+      &__title {
+        width: 30%;
+      }
+    }
   }
 }
