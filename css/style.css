@@ -46,6 +46,7 @@ body {
 
 h1,
 h2,
+h3,
 p {
   font-family: "Montserrat", sans-serif; }
 
@@ -320,9 +321,9 @@ p {
     margin-top: 2rem;
     text-align: center; }
     .profile__top__short--left p:nth-child(1), .profile__top__short--right p:nth-child(1) {
+      font-family: "Montserrat", sans-serif;
       font-size: 1.8rem;
-      line-height: 2.2rem;
-      font-weight: bold; }
+      line-height: 2.2rem; }
     .profile__top__short--left p:nth-child(2), .profile__top__short--right p:nth-child(2) {
       font-size: 1.4rem; }
 
@@ -345,6 +346,7 @@ p {
     margin-bottom: 10rem; }
 
 .profile__title {
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   font-size: 1.4rem;
   margin-bottom: 1rem; }
@@ -439,6 +441,7 @@ p {
         height: 7rem;
         box-shadow: 0px 0.25rem 0.5rem rgba(0, 0, 0, 0.2); }
     .catalog__card__title {
+      font-family: "Montserrat", sans-serif;
       font-size: 1rem;
       width: 40%; }
     .catalog__card__theme {
