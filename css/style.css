@@ -152,6 +152,7 @@ p {
 
 .card {
   margin-right: 25px;
+  margin-bottom: 2rem;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
   background-color: #fff;
   width: 100%;
@@ -341,7 +342,7 @@ p {
 .profile__cards {
   padding: 2rem 2rem 0; }
   .profile__cards__button {
-    margin-top: 2rem; }
+    margin-bottom: 6rem; }
 
 .profile__title {
   text-align: center;
