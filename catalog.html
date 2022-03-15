@@ -10,7 +10,68 @@
     <title>Blogers</title>
   </head>
   <body>
-    <div class="catalog"></div>
+    <div class="catalog">
+      <h2 class="catalog__title">Выберите блогера</h2>
+
+      <a href="#" class="btn catalog__filter"
+        >Фильтровать
+        <img
+          src="https://cdn-icons.flaticon.com/png/512/3024/premium/3024539.png?token=exp=1647291757~hmac=6d8fbbfd8cdb0764ce40f4b7e337b93e"
+          alt="filter"
+      /></a>
+
+      <table cellspacing="0" cellpadding="0" class="catalog__table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Блогер</th>
+            <th>Рейтинг</th>
+            <th>Тематика</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="catalog__table__image">
+              <img
+                src="https://yt3.ggpht.com/ytc/AKedOLRpqd4UsjPzfdHKlPO4g2kfk_hNHAXHtUXGJJ2z=s900-c-k-c0x00ffffff-no-rj"
+                alt="Петя петров"
+              />
+            </td>
+            <td data-th="Блогер">Петя Петров</td>
+            <td data-th="Рейтинг">4.5</td>
+            <td data-th="Тематика">
+              <div data-theme="humor" class="catalog__table__theme">Юмор</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="catalog__table__image">
+              <img
+                src="https://i.pinimg.com/736x/d9/a8/7b/d9a87bd31191c866a4d8f7c218a9fdad.jpg"
+                alt="Иван Иванов"
+              />
+            </td>
+            <td data-th="Блогер">Иван Иванов</td>
+            <td data-th="Рейтинг">7.2</td>
+            <td data-th="Тематика">
+              <div data-theme="music" class="catalog__table__theme">Музыка</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="catalog__table__image">
+              <img
+                src="https://ath2.unileverservices.com/wp-content/uploads/sites/7/2018/01/short-bob-haircut1-300x300.jpg"
+                alt=""
+              />
+            </td>
+            <td data-th="Блогер">Женя Певцова</td>
+            <td data-th="Рейтинг">9.2</td>
+            <td data-th="Тематика">
+              <div data-theme="food" class="catalog__table__theme">Еда</div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
     <div class="navigation">
       <div class="navgation__catalog">
         <img

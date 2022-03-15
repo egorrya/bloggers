@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 *,
 *::after,
@@ -47,7 +48,8 @@ body {
   text-align: center;
   border-radius: 15px;
   background: #333;
-  color: #fff; }
+  color: #fff;
+  box-shadow: 0px 0.5rem 2rem rgba(0, 0, 0, 0.15); }
 
 .form__group:not(:last-child) {
   margin-bottom: 2rem; }
@@ -140,7 +142,7 @@ body {
   position: relative;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0px 0.5rem 2rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0px 0.5rem 2rem rgba(0, 0, 0, 0.15); }
   .card__img {
     background-size: cover;
     background-position: center;
@@ -149,14 +151,21 @@ body {
     height: auto;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px; }
-  .card__title {
+  .card__info {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     padding: 1rem 2rem;
     background-color: #fefefe;
-    z-index: 1; }
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .card__social img {
+    opacity: 0.8;
+    max-width: 2rem;
+    max-height: 2rem;
+    margin-left: 0.2rem; }
 
 .row {
   max-width: 114rem;
@@ -210,8 +219,9 @@ body {
   background-color: #fff;
   box-shadow: 0px 0.5rem 2rem rgba(0, 0, 0, 0.3); }
   .navigation img {
-    max-width: 3.6rem;
-    max-height: 3.6rem; }
+    opacity: 0.8;
+    max-width: 3.4rem;
+    max-height: 3.4rem; }
 
 .register {
   background: url("https://images.unsplash.com/photo-1590739293931-8849049774f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
@@ -313,3 +323,110 @@ body {
   text-align: center;
   font-size: 1.4rem;
   margin-bottom: 1rem; }
+
+.catalog {
+  padding: 0 2rem; }
+  .catalog__title {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    font-size: 2.6rem;
+    text-align: center;
+    font-weight: 700; }
+  .catalog__filter {
+    background-color: #dfdfdf;
+    color: #222;
+    margin-bottom: 3rem; }
+    .catalog__filter img {
+      max-width: 2rem;
+      margin-left: 1rem;
+      margin-bottom: -0.5rem; }
+  .catalog__table {
+    border: none;
+    min-width: 300px;
+    width: 100%;
+    box-shadow: 0px 0.5rem 2rem rgba(0, 0, 0, 0.15);
+    border-radius: 15px; }
+    .catalog__table__image {
+      max-width: 5.2rem;
+      padding: 1rem; }
+      .catalog__table__image img {
+        border-radius: 50%;
+        max-width: 4.5rem;
+        max-height: 4.5rem;
+        box-shadow: 0px 0.25rem 0.5rem rgba(0, 0, 0, 0.2); }
+    .catalog__table tr th,
+    .catalog__table tr td {
+      text-align: left;
+      padding: 1rem;
+      border-bottom: 1px solid #eee; }
+      .catalog__table tr th:not(:last-child),
+      .catalog__table tr td:not(:last-child) {
+        border-right: 1px solid #eee; }
+    .catalog__table tr td[data-th="Блогер"] {
+      font-size: 1.2rem;
+      font-weight: bold; }
+    .catalog__table tr:last-child td {
+      border-bottom: 0; }
+    .catalog__table__theme {
+      border-radius: 5px;
+      text-align: center;
+      padding: 0.5rem; }
+  .catalog__card {
+    margin-right: 25px;
+    margin-bottom: 2rem;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+    background-color: #fff;
+    width: 100%;
+    height: 20rem;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 0.5rem 2rem rgba(0, 0, 0, 0.15); }
+    .catalog__card__img {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px; }
+    .catalog__card__info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 1rem 2rem;
+      background-color: #fefefe;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    .catalog__card__avatar {
+      position: relative;
+      width: 6rem; }
+      .catalog__card__avatar img {
+        position: absolute;
+        border-radius: 50%;
+        top: -6rem;
+        left: -0.75rem;
+        width: 7rem;
+        height: 7rem;
+        box-shadow: 0px 0.25rem 0.5rem rgba(0, 0, 0, 0.2); }
+    .catalog__card__title {
+      width: 40%; }
+    .catalog__card__theme {
+      font-size: 0.9rem;
+      background-color: #cae9ca;
+      padding: 0.3rem;
+      border-radius: 3px; }
+    .catalog__card__social img {
+      opacity: 0.8;
+      max-width: 2rem;
+      max-height: 2rem;
+      margin-left: 0.2rem;
+      margin-top: 0.3rem; }
+  .catalog [data-theme="music"] {
+    background-color: #d3eed3; }
+  .catalog [data-theme="humor"] {
+    background-color: #eed3e4; }
+  .catalog [data-theme="food"] {
+    background-color: #eeecd3; }
