@@ -57,7 +57,7 @@ p {
 
 .btn {
   display: inline-block;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   text-decoration: none;
   width: 100%;
   padding-top: 1.6rem;
@@ -74,17 +74,16 @@ p {
 
 .form__input {
   font-family: inherit;
-  font-size: 1.5rem;
-  padding: 1.5rem 2rem;
-  border-radius: 4px;
+  font-size: 1.3rem;
+  padding: 1.3rem 1.3rem;
+  border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.9);
   color: inherit;
-  border: none;
-  border-bottom: 3px solid transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   width: 100%;
   display: block;
   transition: all 0.3s;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1); }
   .form__input:focus {
     outline: none;
@@ -260,15 +259,23 @@ p {
   flex-direction: row;
   background-attachment: fixed; }
   .register__buttons {
+    position: fixed;
+    bottom: 0;
     border-radius: 20px 20px 0 0;
     background-color: #fefefe;
     width: 100%;
-    padding: 4rem 2rem; }
+    padding: 4rem 2rem 4rem; }
     .register__buttons h1 {
       font-size: 2.2rem;
       width: 100%;
       text-align: center;
       margin-bottom: 3rem; }
+  .register__login {
+    padding-top: 2rem;
+    color: #222;
+    display: block;
+    text-align: center;
+    margin: 0 auto; }
 
 .register-company {
   background: url("../img/photo-1590739293931-8849049774f1.jpg");
@@ -281,7 +288,9 @@ p {
   flex-direction: row;
   background-attachment: fixed; }
   .register-company__buttons {
-    border-radius: 20px 20px 0 0;
+    position: fixed;
+    bottom: 0;
+    padding: 4rem 2rem 6rem;
     background-color: #fefefe; }
 
 .profile__background {
@@ -309,7 +318,8 @@ p {
     max-height: 11rem;
     margin-top: -5.5rem;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); }
 
 .profile__top__short {
   display: flex;
@@ -338,7 +348,18 @@ p {
     font-size: 2.2rem; }
   .profile__top__info p {
     font-size: 1.2rem;
-    color: #797979; }
+    color: #797979;
+    padding: 1rem 4rem; }
+  .profile__top__info__location {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #797979;
+    padding: 0 4rem; }
+    .profile__top__info__location img {
+      margin-bottom: -0.15rem;
+      max-width: 1.1rem;
+      opacity: 0.8; }
 
 .profile__cards {
   padding: 2rem 2rem 0; }
