@@ -190,6 +190,49 @@ p {
     max-height: 2rem;
     margin-left: 0.2rem; }
 
+.tabs {
+  position: relative;
+  display: flex;
+  background-color: #fff;
+  box-shadow: 0 0 1px 0 rgba(187, 187, 187, 0.3), 0 6px 12px 0 rgba(202, 202, 202, 0.5);
+  border-radius: 99px; }
+  .tabs * {
+    z-index: 2; }
+  .tabs input[type="radio"] {
+    display: none; }
+    .tabs input[type="radio"]:checked + label {
+      color: white;
+      background-color: #333; }
+  .tabs .tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 33.3%;
+    font-size: 1rem;
+    border-radius: 99px;
+    cursor: pointer;
+    transition: color 0.15s ease-in; }
+  .tabs .glider {
+    position: absolute;
+    display: flex;
+    height: 4rem;
+    width: 33.3%;
+    background-color: var(--secondary-color);
+    z-index: 1;
+    border-radius: 99px;
+    transition: 0.25s ease-out; }
+  .tabs input[id="radio-1"]:checked ~ .glider {
+    transform: translateX(0); }
+  .tabs input[id="radio-2"]:checked ~ .glider {
+    transform: translateX(100%); }
+  .tabs input[id="radio-3"]:checked ~ .glider {
+    transform: translateX(200%); }
+
+@media (max-width: 700px) {
+  .tabs {
+    transform: scale(0.9); } }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -374,6 +417,45 @@ p {
   font-size: 1.4rem;
   margin-bottom: 1rem; }
 
+.profile__blogger__card {
+  margin-right: 25px;
+  margin-bottom: 2rem;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  background-color: #fff;
+  width: 100%;
+  height: 26rem;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 0.5rem 2rem rgba(0, 0, 0, 0.15); }
+  .profile__blogger__card__img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    min-height: 26rem;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px; }
+  .profile__blogger__card__info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: #fefefe;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .profile__blogger__card__title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400; }
+  .profile__blogger__card__social img {
+    opacity: 0.8;
+    max-width: 2rem;
+    max-height: 2rem;
+    margin-left: 0.2rem; }
+
 .catalog {
   padding: 0 2rem; }
   .catalog__title {
@@ -434,6 +516,7 @@ p {
       text-align: center;
       padding: 0.5rem; }
   .catalog__card {
+    display: block;
     margin-right: 25px;
     margin-bottom: 2rem;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
