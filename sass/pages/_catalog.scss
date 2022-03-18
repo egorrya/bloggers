@@ -24,6 +24,23 @@
     }
   }
 
+  &__filtered {
+    margin-bottom: 3rem;
+
+    p {
+      img {
+        max-width: 0.9rem;
+      }
+
+      display: inline-block;
+      padding: 0.7rem 1rem;
+      border-radius: 7px;
+      background: #ddd;
+      margin-top: 0.5rem;
+      margin-right: 0.5rem;
+    }
+  }
+
   &__table {
     border: none;
 

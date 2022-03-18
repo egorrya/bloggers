@@ -391,6 +391,17 @@ p {
       max-width: 2rem;
       margin-left: 1rem;
       margin-bottom: -0.5rem; }
+  .catalog__filtered {
+    margin-bottom: 3rem; }
+    .catalog__filtered p {
+      display: inline-block;
+      padding: 0.7rem 1rem;
+      border-radius: 7px;
+      background: #ddd;
+      margin-top: 0.5rem;
+      margin-right: 0.5rem; }
+      .catalog__filtered p img {
+        max-width: 0.9rem; }
   .catalog__table {
     border: none;
     min-width: 300px;
