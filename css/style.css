@@ -534,6 +534,7 @@ p {
       padding: 0.5rem; }
   .catalog__card {
     display: block;
+    color: #222;
     margin-right: 25px;
     margin-bottom: 2rem;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
@@ -558,6 +559,7 @@ p {
       position: absolute;
       bottom: 0;
       left: 0;
+      color: #222;
       width: 100%;
       padding: 1rem 2rem;
       background-color: #fefefe;
