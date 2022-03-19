@@ -64,8 +64,8 @@
               </div>
             </div>
             <div class="profile__blogger__card__buttons">
-              <a href="#" class="btn">Денежное предложение</a>
-              <a href="#" class="btn">Бартер</a>
+              <a href="#" class="btn openPopup">Денежное предложение</a>
+              <a href="#" class="btn openPopup">Бартер</a>
             </div>
           </article>
 
@@ -88,5 +88,33 @@
         <img src="./img/account.png" alt="profile" />
       </a>
     </nav>
+
+    <div class="popup">
+      <div class="popup__container">
+        <div class="popup__close">X</div>
+        <h2>Создать предложение</h2>
+        <input
+          class="form__input"
+          type="text"
+          placeholder="Сколько необходимо постов?"
+        />
+        <input class="form__input" type="text" placeholder="Аванс" />
+        <input
+          class="form__input"
+          type="text"
+          placeholder="Опишите рекламную кампанию"
+        />
+        <a href="#" class="btn">Создать предложение</a>
+      </div>
+    </div>
   </body>
+  <script>
+    document.querySelector(".openPopup").addEventListener("click", () => {
+      document.querySelector(".popup").style.display = "block";
+    });
+
+    document.querySelector(".popup__close").addEventListener("click", () => {
+      document.querySelector(".popup").style.display = "none";
+    });
+  </script>
 </html>
